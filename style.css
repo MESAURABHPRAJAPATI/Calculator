@@ -1,0 +1,77 @@
+/* Universal Selector */
+*{
+    padding: 0;
+    margin: 0;
+    transition: all 0.5s ease;
+}
+/* Main Body tag Styling gradient transition */
+body{
+    padding:100px;
+    background: linear-gradient(to right, blue 2%, black 50%);
+    height: 100%;
+}
+/* Calculator class styling  */
+.calculator {
+    width: 245px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid rgb(56, 74, 7);
+    border-radius: 25px;    
+}
+.calculator{
+    background-color:blue;
+    transition: all;
+    transition: transform .2s;
+}
+/* On hove scaling */
+.calculator:hover{
+    background-color: black;
+    transform:scale(1.05);
+}
+/* .Input text area styling */
+.calculator input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+/* Buttons styling */
+.calculator .buttons button {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    font-size: 18px;
+    border: 1px solid red;
+    cursor: pointer;
+}
+/* Hover on buttons */
+.calculator .buttons button:hover {
+    transform: scale(1.1);
+}
+/* Operators color and border radius */
+.operator {
+    background-color: rgb(229, 46, 76);
+    border-radius: 15px;
+}
+/* Numbers color and border radius */
+.numbers{
+    background-color: purple;
+    border-radius: 50px;
+}
+/* Equals color and border radius */
+.equal {
+    background-color: green;
+    border-radius: 20px;
+}
+/* ClearResult color and border radius */
+#clearResult{
+    background-color: red;
+    border-radius: 15px;
+}
+/* Delete color and border radius */
+#del{
+    background-color: rgb(145, 239, 145);
+    border-radius: 15px;
+}
+

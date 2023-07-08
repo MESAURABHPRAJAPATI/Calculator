@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <!--Head Tag  -->
+<head>
+    <!-- Title Of The Calculator -->
+    <title>Calculator</title>
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Adding Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+    <!-- Calculator Class -->
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <!-- All Buttons tag class -->
+        <div class="buttons">
+            <!-- Clear Button -->
+            <button id="clearResult" onclick="clearResult()">C</button>
+            <!-- Delete Button -->
+            <button id="del" onclick="deleteCharacter()">Del</button>
+            <br>
+            <!-- Division Button -->
+            <button onclick="appendCharacter('/')" class="operator">/</button>
+            <!-- Numbers -->
+            <button class="numbers" onclick="appendCharacter('9')">9</button>
+            <button class="numbers" onclick="appendCharacter('8')">8</button>
+            <button class="numbers" onclick="appendCharacter('7')">7</button>
+            <!-- Multiply -->
+            <button onclick="appendCharacter('*')" class="operator">*</button>
+            <!-- Numbers -->
+            <button class="numbers" onclick="appendCharacter('6')">6</button>
+            <button class="numbers" onclick="appendCharacter('5')">5</button>
+            <button class="numbers" onclick="appendCharacter('4')">4</button>
+            <!-- Subtraction -->
+            <button onclick="appendCharacter('-')" class="operator">-</button>
+            <!-- Numbers -->
+            <button class="numbers" onclick="appendCharacter('3')">3</button>
+            <button class="numbers" onclick="appendCharacter('2')">2</button>
+            <button class="numbers" onclick="appendCharacter('1')">1</button>
+            <!-- Addition -->
+            <button onclick="appendCharacter('+')" class="operator">+</button>
+            <!-- Numbers -->
+            <button class="numbers" onclick="appendCharacter('0')">0</button>
+            <button class="numbers" onclick="appendCharacter('.')">.</button>
+            <!-- Equals -->
+            <button onclick="calculateResult()" class="equal">=</button>
+        </div>
+    </div>
+    <!-- Javascript File -->
+    <script src="calculator.js"></script>
+</body>
+</html>
